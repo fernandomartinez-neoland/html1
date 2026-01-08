@@ -11,17 +11,27 @@
         margin: 0;
         padding: 0;
       }
-      .header {
-        background-color: red;
+      .center {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+      }
+      .header {
+        background-color: red;
         align-items: center;
         padding: 10px 20px;
         color: #ffffff;
       }
+      .menu {
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+      }
     </style>
 
-    <header class="header">
+    <header class="header center">
       <h1>League of Legends</h1>
       <img
         src="https://p4.wallpaperbetter.com/wallpaper/141/263/736/nami-league-of-legends-nami-siren-league-of-legends-riot-games-hd-wallpaper-preview.jpg"
@@ -29,16 +39,7 @@
         style="width: 100px; border-radius: 40px; max-height: 200px"
       />
       <nav>
-        <ul
-          style="
-            display: flex;
-
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-            gap: 20px;
-          "
-        >
+        <ul class="menu center">
           <li style="color: green"><h2>home</h2></li>
           <li><a href="https://www.google.com" target="_blank">news</a></li>
           <li>contact</li>
@@ -46,5 +47,25 @@
       </nav>
       <b>asdfghjk</b>
     </header>
+
+    <main>
+      <div>
+        <h2>League of Legends</h2>
+        <div class="center">
+          <div style="background-color: green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+            eveniet possimus beatae architecto aspernatur? Molestias soluta
+            ipsum pariatur, voluptatum obcaecati quidem in repudiandae non
+            reprehenderit natus est! Porro, omnis nostrum?
+          </div>
+          <div style="background-color: red">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis laudantium, quia repellendus officiis sunt cum
+            recusandae aliquam, totam eius tenetur ipsum illo excepturi quod qui
+            consequatur nostrum natus quam tempora!
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
