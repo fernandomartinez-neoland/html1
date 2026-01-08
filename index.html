@@ -6,15 +6,22 @@
     <title>Documento</title>
   </head>
   <body>
-    <header
-      style="
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
         background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-      "
-    >
+        color: #ffffff;
+      }
+    </style>
+
+    <header class="header">
       <h1>League of Legends</h1>
       <img
         src="https://p4.wallpaperbetter.com/wallpaper/141/263/736/nami-league-of-legends-nami-siren-league-of-legends-riot-games-hd-wallpaper-preview.jpg"
@@ -22,8 +29,17 @@
         style="width: 100px; border-radius: 40px; max-height: 200px"
       />
       <nav>
-        <ul>
-          <li><h2>home</h2></li>
+        <ul
+          style="
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+          "
+        >
+          <li style="color: green"><h2>home</h2></li>
           <li><a href="https://www.google.com" target="_blank">news</a></li>
           <li>contact</li>
         </ul>
