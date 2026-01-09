@@ -47,3 +47,11 @@ h1 {
 .menu li:hover {
   color: blueviolet;
 }
+
+#ultimo {
+  color: blue;
+}
+/* 
+etiqueta: no lleva ningun decorador
+.clase: lleva un punto antes del nombre de la clase
+#id: llevan un "#" antes del nombre del id (este no deben de repetirlo y traten de no meterse muy seguido con el ID*/
