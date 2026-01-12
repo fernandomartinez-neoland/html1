@@ -1,3 +1,9 @@
+:root {
+  --color_primario: #2f4bff;
+  --fondo: #2f4e2f;
+  --ancho: 100px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,7 +16,7 @@ body {
   @media (max-width: 600px) {
     flex-direction: column;
 
-    color: pink;
+    color: var(--color_primario);
   }
 }
 
@@ -21,10 +27,11 @@ body {
   min-height: 100vh;
 }
 .header {
-  background-color: red;
+  max-width: var(--ancho);
+  background-color: var(--color_primario);
   align-items: center;
   padding: 10px 20px;
-  color: #ffffff;
+  color: var(--fondo);
 }
 
 .header .menu li,
